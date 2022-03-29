@@ -1,0 +1,37 @@
+#home-section {
+  margin-top: 0;
+  background: url(../img/vKirirom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 900px;
+}
+#home-section .dark-overlay {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    min-height: 900px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+svg text {
+   font-family: Lora;
+   letter-spacing: 10px;
+   stroke: #107c40;
+   font-size: 90px;
+   font-weight: 1000;
+   stroke-width: 3;
+   animation: textAnimate 5s infinite alternate;
+}
+@keyframes textAnimate {
+   0% {
+     stroke-dasharray: 0 50%;
+     stroke-dashoffset:  20%;
+     fill:rgba(255, 255, 255, 0)
+   }
+   100% {
+     stroke-dasharray: 50% 0;
+     stroke-dashoffstet: -20%;
+     fill: hsla(189, 68%, 75%,0%)
+   }
+ }
